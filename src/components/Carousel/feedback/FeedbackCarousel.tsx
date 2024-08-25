@@ -92,7 +92,7 @@ const CustomLeftArrow: React.FC<CustomArrowProps> = ({ onClick, totalItems, ...r
 export function FeedbackCarousel() {
   const totalItems = 6
   return (
-    <div className="pb-9">
+    <div className="pb-9 relative">
 
       <Carousel
         additionalTransfrom={10}
