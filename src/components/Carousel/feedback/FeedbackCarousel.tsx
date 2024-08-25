@@ -163,12 +163,13 @@ export function FeedbackCarousel() {
         swipeable
       >
 
-        <FeedbackCard author="Juliana Severo" message="Sempre tive medo de fazer procedimento estético no rosto...mas depois que conheci a Clínica e o trabalho da Dra Stéphanie, minha visão sobre procedimentos mudou completamente. Você já se sente especial na recepção. Ela tem um carinho,  respeito e o profissionalismo incrível com suas clientes." stars={5} />
-        <FeedbackCard author="Juliana Severo" message="Sempre tive medo de fazer procedimento estético no rosto...mas depois que conheci a Clínica e o trabalho da Dra Stéphanie, minha visão sobre procedimentos mudou completamente. Você já se sente especial na recepção. Ela tem um carinho,  respeito e o profissionalismo incrível com suas clientes." stars={5} />
-        <FeedbackCard author="Juliana Severo" message="Sempre tive medo de fazer procedimento estético no rosto...mas depois que conheci a Clínica e o trabalho da Dra Stéphanie, minha visão sobre procedimentos mudou completamente. Você já se sente especial na recepção. Ela tem um carinho,  respeito e o profissionalismo incrível com suas clientes." stars={5} />
-        <FeedbackCard author="Juliana Severo" message="Sempre tive medo de fazer procedimento estético no rosto...mas depois que conheci a Clínica e o trabalho da Dra Stéphanie, minha visão sobre procedimentos mudou completamente. Você já se sente especial na recepção. Ela tem um carinho,  respeito e o profissionalismo incrível com suas clientes." stars={5} />
-        <FeedbackCard author="Juliana Severo" message="Sempre tive medo de fazer procedimento estético no rosto...mas depois que conheci a Clínica e o trabalho da Dra Stéphanie, minha visão sobre procedimentos mudou completamente. Você já se sente especial na recepção. Ela tem um carinho,  respeito e o profissionalismo incrível com suas clientes." stars={5} />
-        <FeedbackCard author="Juliana Severo" message="Sempre tive medo de fazer procedimento estético no rosto...mas depois que conheci a Clínica e o trabalho da Dra Stéphanie, minha visão sobre procedimentos mudou completamente. Você já se sente especial na recepção. Ela tem um carinho,  respeito e o profissionalismo incrível com suas clientes." stars={5} />
+        <FeedbackCard author="Carlos Almeida" message="As tábuas artesanais da Tábua Gaucha são de uma qualidade excepcional. Comprei uma para minha cozinha e agora todos perguntam onde eu consegui. A atenção aos detalhes é impressionante." stars={5} />
+        <FeedbackCard author="Mariana Santos" message="Estou encantada com a mesa de madeira que comprei. É uma peça única, que traz um charme rústico e elegante ao ambiente. A Tábua Gaucha realmente sabe como trabalhar a madeira com excelência." stars={5} />
+        <FeedbackCard author="Rafael Oliveira" message="Sempre procurei por peças artesanais que realmente se destacam, e a Tábua Gaucha entregou exatamente isso. As cruzes de madeira são belíssimas, feitas com muito cuidado e dedicação." stars={5} />
+        <FeedbackCard author="Ana Paula Ferreira" message="A qualidade das tábuas de corte da Tábua Gaucha é incomparável. Além de serem extremamente funcionais, são lindas o suficiente para usar como decoração. Estou muito satisfeita com minha compra!" stars={5} />
+        <FeedbackCard author="José Costa" message="Comprei uma cruz de madeira para presentear um amigo, e ele ficou maravilhado. O trabalho artesanal é de altíssimo nível, e o atendimento foi excelente. Recomendo a Tábua Gaucha sem reservas." stars={5} />
+        <FeedbackCard author="Luciana Martins" message="As peças da Tábua Gaucha são verdadeiras obras de arte. Adquiri uma mesa de jantar e uma tábua de carne, e ambas são maravilhosas. A madeira é de ótima qualidade e o acabamento impecável." stars={5} />
+
       </Carousel>
     </div>
   )
