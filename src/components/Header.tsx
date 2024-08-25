@@ -9,6 +9,7 @@ import { Button } from "./ui/button"
 import Link from "next/link"
 import SheetNotification from "./SheetNotification"
 import SheetFavorites from "./SheetFavorites"
+import bgWood from '../../public/bg-wood-svg.svg'
 
 
 const NavigationMenuCard = ({ title, description }: { title: string, description: string }) => {
@@ -86,57 +87,123 @@ export function Header() {
 
                 {/* Nossa loja */}
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger className={'hover:text-neutral-200  focus:text-neutral-200'}>Nossa loja</NavigationMenuTrigger>
+                  <NavigationMenuTrigger className="hover:text-neutral-200 focus:text-neutral-200">
+                    Nossa loja
+                  </NavigationMenuTrigger>
                   <NavigationMenuContent>
                     {/* Container principal */}
-                    <div className="bg-white w-[562px] p-6 flex flex-col ">
+                    <div className="bg-slate-50 w-[600px] p-6 flex flex-col gap-5 relative">
+                      <Image src={bgWood} alt="Background de madeira" fill className="object-cover " />
+                      {/* Título da seção */}
+                      <div className="text-center mb-4 relative z-10">
+                        <h3 className="text-xl font-semibold text-neutral-800">Explore Nossos Produtos</h3>
+                        <p className="text-neutral-500 text-sm">
+                          Descubra nossa linha completa de móveis rústicos, criados com qualidade e atenção aos detalhes.
+                        </p>
+                      </div>
+
                       {/* Container de links */}
-                      <div className="flex gap-3">
+                      <div className="flex gap-3 relative z-10">
                         {/* Container da esquerda */}
                         <div className="flex flex-col gap-3">
                           <NavigationMenuLink asChild>
-                            <Link href={'/'}>
-                              <NavigationMenuCard title="Mesa de centro" description="Realce seus pontos fortes e corrija imperfeições como marcas de expressão e sinta sua melhor versão" />
-                            </Link>
+                            <Link href={'/produto/mesa-de-centro'}>
+                              <NavigationMenuCard
+                                title="Mesa de Centro"
+                                description="Elegância e funcionalidade para sua sala de estar, disponível em diferentes acabamentos."
 
+                              />
+                            </Link>
                           </NavigationMenuLink>
 
                           <NavigationMenuLink asChild>
-                            <Link href={'/'}>
-                              <NavigationMenuCard title="Conjunto" description="Técnicas que visam remodelar seu corpo, eliminar gorduras localizadas com resultados eficazes" />
-                            </Link>
+                            <Link href={'/produto/conjunto'}>
+                              <NavigationMenuCard
+                                title="Conjunto de Mesas"
+                                description="Componha ambientes com harmonia e estilo com nossos conjuntos de mesas."
 
+                              />
+                            </Link>
                           </NavigationMenuLink>
                         </div>
 
                         {/* Container da direita */}
                         <div className="flex flex-col gap-3">
                           <NavigationMenuLink asChild>
-                            <Link href={'/'}>
-                              <NavigationMenuCard title="Mesa de canto" description="O Jetbronze é um método seguro e eficaz de bronzeamento artificial que não causa danos à pele" />
+                            <Link href={'/produto/mesa-de-canto'}>
+                              <NavigationMenuCard
+                                title="Mesa de Canto"
+                                description="Peças versáteis que combinam com diversos ambientes, perfeitas para espaços aconchegantes."
+
+                              />
                             </Link>
                           </NavigationMenuLink>
+
                           <NavigationMenuLink asChild>
-                            <Link href={'/'}>
-                              <NavigationMenuCard title="Cruz de madeira" description="Elimine impurezas, renove a sua pele e desfrute da maciez e saúde que ela merece" />
+                            <Link href={'/produto/cruz-de-madeira'}>
+                              <NavigationMenuCard
+                                title="Cruz de Madeira"
+                                description="Decore seu ambiente com uma peça artesanal, símbolo de fé e tradição."
+
+                              />
                             </Link>
                           </NavigationMenuLink>
                         </div>
-
-
                       </div>
 
-                      <Button>
-                        Todos os produtos
-                      </Button>
-
+                      {/* Botão para todos os produtos */}
+                      <div className="text-center mt-4">
+                        <Button className="bg-yellow-500 relative z-10 hover:bg-yellow-600 text-white px-4 py-2 rounded-md">
+                          Ver todos os produtos
+                        </Button>
+                      </div>
                     </div>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
 
+                {/* Contato */}
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger className={'hover:text-neutral-200  focus:text-neutral-200'}>Contato</NavigationMenuTrigger>
+                  <NavigationMenuTrigger className="hover:text-neutral-200 focus:text-neutral-200">
+                    Contato
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    {/* Container principal */}
+                    <div className="bg-white w-[562px] p-6 flex flex-col gap-5">
+                      <div className="flex gap-3">
+                        {/* Container da esquerda */}
+                        <div className="flex flex-col gap-3">
+                          <NavigationMenuLink asChild>
+                            <Link href={'/contato'}>
+                              <NavigationMenuCard title="Atendimento" description="Estamos aqui para ajudar! Entre em contato conosco para qualquer dúvida ou suporte." />
+                            </Link>
+                          </NavigationMenuLink>
 
+                          <NavigationMenuLink asChild>
+                            <Link href={'/contato'}>
+                              <NavigationMenuCard title="Localização" description="Encontre a nossa loja física e venha nos visitar pessoalmente." />
+                            </Link>
+                          </NavigationMenuLink>
+                        </div>
+
+                        {/* Container da direita */}
+                        <div className="flex flex-col gap-3">
+                          <NavigationMenuLink asChild>
+                            <Link href={'/contato'}>
+                              <NavigationMenuCard title="Parcerias" description="Interessado em colaborar com a Tábua Gaúcha? Fale conosco sobre parcerias e projetos." />
+                            </Link>
+                          </NavigationMenuLink>
+
+                          <NavigationMenuLink asChild>
+                            <Link href={'/contato'}>
+                              <NavigationMenuCard title="Feedback" description="Sua opinião é importante para nós! Compartilhe suas sugestões e experiências." />
+                            </Link>
+                          </NavigationMenuLink>
+                        </div>
+                      </div>
+
+                      <Button>Fale conosco</Button>
+                    </div>
+                  </NavigationMenuContent>
                 </NavigationMenuItem>
               </NavigationMenuList>
 
