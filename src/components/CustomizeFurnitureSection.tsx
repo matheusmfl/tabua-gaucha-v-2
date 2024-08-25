@@ -2,13 +2,23 @@ import Image from "next/image";
 import { Container } from "./Container";
 import { Button } from "./ui/button";
 import customizeImg from '../../public/customizeImg.png'
+import bgWood from '../../public/bg-wood-svg.svg'
 
 export function CustomizeFurnitureSection() {
   return (
-    <section className="p-20 bg-gray-100 flex justify-center">
+    <section className="p-20 bg-gray-100 flex justify-center relative overflow-hidden">
+
+      <div className="absolute right-0 top-0">
+        <div className="relative h-[600px] w-[450px]">
+          <Image src={bgWood} fill alt="Backgroud de madeira" className="object-cover" />
+        </div>
+      </div>
+
+
+
       <Container >
         {/* Container total */}
-        <div className="flex gap-5 px-10 w-full">
+        <div className="flex gap-5 px-10 w-full items-center justify-center">
           {/* Div da esquerda */}
           <div className="py-9 flex flex-col gap-5 min-w-[400px] max-w-[590px] pr-14">
             {/* Primeiro texto com divisor */}
